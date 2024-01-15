@@ -1,6 +1,5 @@
 FROM amazon/aws-cli:latest
 
-# Add jq
-RUN  yum update && yum install -y jq
+RUN  yum update && yum install -y less groff jq tar gzip
 
 ENTRYPOINT [""]
